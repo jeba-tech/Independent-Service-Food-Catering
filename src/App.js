@@ -5,10 +5,11 @@ import { Routes, Route } from 'react-router-dom';
 import Banner from './Components/Banner/Banner';
 import Header from './Components/Header/Header';
 import Login from './Components/Login/Login';
-import Service from './Components/Services/Service';
+import Services from './Components/Services/Services';
 import About from './Components/About/About';
 import Footer from './Components/Footer/Footer';
 import Register from './Components/Register/Register';
+import RequireAuth from './Components/RequireAuth/RequireAuth';
 
 //const auth = getAuth(app);
 
@@ -141,17 +142,23 @@ function App() {
   return (
     <div>
       <Header></Header>
-      <Footer></Footer>
+      <Banner></Banner>
+
       <Routes>
-        <Route path="/" element={<Banner></Banner>}></Route>
+
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
-        <Route path="/services" element={<Service></Service>}></Route>
+        <Route path="/services" element={
+          <RequireAuth>
+            <Services></Services>
+          </RequireAuth>
+
+        }></Route>
         <Route path="/about" element={<About></About>}></Route>
 
       </Routes>
 
-
+      <Footer></Footer>
 
     </div>
   );
