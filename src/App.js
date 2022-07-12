@@ -141,26 +141,25 @@ function App() {
   // }
   return (
     <div>
-      <Header></Header>
-      <Banner></Banner>
+      <div>
+        <Header></Header>
+        <Banner></Banner>
 
-      <Routes>
+        <Routes>
+          <Route path="/about" element={<About></About>}></Route>
+          <Route path="/services" element={<Services></Services>}></Route>
+          <Route path="/login" element={<Login></Login>}></Route>
+          <Route path="/register" element={<Register></Register>}></Route>
 
-        <Route path="/login" element={<Login></Login>}></Route>
-        <Route path="/register" element={<Register></Register>}></Route>
-        <Route path="/services" element={
-          <RequireAuth>
-            <Services></Services>
-          </RequireAuth>
 
-        }></Route>
-        <Route path="/about" element={<About></About>}></Route>
 
-      </Routes>
+        </Routes>
+      </div>
 
       <Footer></Footer>
 
     </div>
+
   );
 }
 

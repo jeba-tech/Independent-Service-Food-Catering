@@ -8,6 +8,8 @@ import './Header.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import logo from '../../images/logo.png'
+import { Link } from 'react-router-dom';
 const Header = () => {
       const [user] = useAuthState(auth);
 
@@ -18,20 +20,28 @@ const Header = () => {
 
 
             <div>
-                  <Navbar bg="dark" variant="dark">
+
+
+                  <Navbar collapseOnSelect expand="lg" fixed="top" bg="dark" variant="dark">
                         <Container>
-                              <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-                              <Nav className="me-auto">
-                                    <Nav.Link href="/">Home</Nav.Link>
-                                    <Nav.Link href="/about">About</Nav.Link>
-                                    <Nav.Link href="/services">Services</Nav.Link>
-                                    {
-                                          user ?
-                                                <button onClick={handleSignOut}>Sign out</button>
-                                                :
-                                                <Nav.Link href="/login">Login</Nav.Link>
-                                    }
-                              </Nav>
+                              <Navbar.Brand as={Link} to="/">
+                                    <img height={90} width={100} src={logo} />
+                              </Navbar.Brand>
+                              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                              <Navbar.Collapse id="responsive-navbar-nav">
+                                    <Nav className="me-auto">
+                                          <Nav.Link as={Link} to="/">Home</Nav.Link>
+                                          <Nav.Link as={Link} to="/about">About</Nav.Link>
+                                          <Nav.Link as={Link} to="/services">Services</Nav.Link>
+                                          {
+                                                user ?
+                                                      <button onClick={handleSignOut}>Sign out</button>
+                                                      :
+                                                      <Nav.Link as={Link} to="/login">Login</Nav.Link>
+                                          }
+                                    </Nav>
+
+                              </Navbar.Collapse>
                         </Container>
                   </Navbar>
             </div>
