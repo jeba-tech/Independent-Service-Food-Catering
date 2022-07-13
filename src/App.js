@@ -2,14 +2,16 @@ import './App.css';
 
 //import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Banner from './Components/Banner/Banner';
 import Header from './Components/Header/Header';
 import Login from './Components/Login/Login';
-import Services from './Components/Services/Services';
+import Home from './Components/Home/Home';
 import About from './Components/About/About';
-import Footer from './Components/Footer/Footer';
 import Register from './Components/Register/Register';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
+import ServiceDetail from './Components/ServiceDetail/ServiceDetail';
+import Footer from './Components/Footer/Footer';
+import NotFound from './Components/NotFound/NotFound';
+import Order from './Components/Order/Order';
 
 //const auth = getAuth(app);
 
@@ -141,22 +143,30 @@ function App() {
   // }
   return (
     <div>
-      <div>
-        <Header></Header>
-        <Banner></Banner>
 
-        <Routes>
-          <Route path="/about" element={<About></About>}></Route>
-          <Route path="/services" element={<Services></Services>}></Route>
-          <Route path="/login" element={<Login></Login>}></Route>
-          <Route path="/register" element={<Register></Register>}></Route>
+      <Header></Header>
 
 
+      <Routes>
+        <Route path="/" element={<Home></Home>}></Route>
 
-        </Routes>
-      </div>
+        <Route path="/about" element={<About></About>}></Route>
+        <Route path="/service/:serviceId" element={<ServiceDetail></ServiceDetail>}></Route>
+        <Route path="/login" element={<Login></Login>}></Route>
+        <Route path="/register" element={<Register></Register>}></Route>
+        <Route path="/order" element={
+          <RequireAuth>
+            <Order></Order>
+          </RequireAuth>
+        }></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
 
+
+
+
+      </Routes>
       <Footer></Footer>
+
 
     </div>
 

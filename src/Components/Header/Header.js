@@ -25,22 +25,24 @@ const Header = () => {
                   <Navbar collapseOnSelect expand="lg" fixed="top" bg="dark" variant="dark">
                         <Container>
                               <Navbar.Brand as={Link} to="/">
-                                    <img height={90} width={100} src={logo} />
+                                    <img height={50} width={65} src={logo} />
                               </Navbar.Brand>
                               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                               <Navbar.Collapse id="responsive-navbar-nav">
                                     <Nav className="me-auto">
-                                          <Nav.Link as={Link} to="/">Home</Nav.Link>
-                                          <Nav.Link as={Link} to="/about">About</Nav.Link>
-                                          <Nav.Link as={Link} to="/services">Services</Nav.Link>
+
+                                          <Nav.Link href="#about">About</Nav.Link>
+                                          <Nav.Link href="#services">Services</Nav.Link>
+
+                                    </Nav>
+                                    <Nav>
                                           {
                                                 user ?
                                                       <button onClick={handleSignOut}>Sign out</button>
                                                       :
-                                                      <Nav.Link as={Link} to="/login">Login</Nav.Link>
+                                                      <Nav.Link href="/login">Login</Nav.Link>
                                           }
                                     </Nav>
-
                               </Navbar.Collapse>
                         </Container>
                   </Navbar>
