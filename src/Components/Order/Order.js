@@ -4,7 +4,7 @@ import './Order.css';
 const Order = () => {
       return (
             <div className='order'>
-                  <h1>Please Order</h1>
+                  <h1 className='mt-5'>Please Order</h1>
             </div>
       );
 };

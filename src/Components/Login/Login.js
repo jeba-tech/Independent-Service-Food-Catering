@@ -4,6 +4,7 @@ import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import './Login.css';
+import SocialLogin from './SocialLogin';
 
 
 const Login = () => {
@@ -28,6 +29,9 @@ const Login = () => {
             setPassword(event.target.value);
       }
 
+
+
+
       if (user) {
             navigate(from, { replace: true });
       }
@@ -36,6 +40,8 @@ const Login = () => {
             event.preventDefault();
             signInWithEmailAndPassword(email, password);
       }
+
+
       return (
             <div className='form-container'>
                   <div>
@@ -58,6 +64,8 @@ const Login = () => {
                         <p>
                               New to Ema-John? <Link className='form-link' to="/register">Create an account</Link>
                         </p>
+
+                        <SocialLogin></SocialLogin>
                   </div>
             </div>
       );
