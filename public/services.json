@@ -1,11 +1,11 @@
 [
       {
             "id": 1,
-            "name": "Mission Chinese Food",
+            "name": "Superiority Burger",
             "neighborhood": "Manhattan",
             "photograph": "https://i.ibb.co/TYWwLH7/front-view-burger-stand.png",
             "price": "200",
-            "address": "This place is a blast. Must orders: GREEN TEA NOODS, sounds gross (to me at least) but these were incredible!, Kung pao pastrami (but you already knew that), beef tartare was a fun appetizer that we decided to try!",
+            "address": "Consisting of fillings —usually a patty of ground meat, typically beef—placed inside a sliced bun or bread roll.Beef tartare was a fun appetizer that we decided to try!",
             "reviews": [
                   {
                         "name": "Morgan",
@@ -17,11 +17,11 @@
       },
       {
             "id": 2,
-            "name": "Emily",
+            "name": "Roberta's Pizza",
             "neighborhood": "Brooklyn",
             "photograph": "https://i.ibb.co/fQnnhDh/pizza-pizza-filled-with-tomatoes-salami-olives.png",
-            "price": "200",
-            "address": "5 star atmosphere as it is very cozy with great staff. 5 star food as their Emmy burger is outrageously good. and its on a pretzel bun.. Too juicy for its own good and downright addicting.",
+            "price": "250",
+            "address": "The most common ingredient in pizza dishes is olive oil. Flour, yeast, mozzarella cheese, white sugar, tomatoes and onion are also common ingredients in pizza recipes.",
             "reviews": [
                   {
                         "name": "Sam",
@@ -33,11 +33,11 @@
       },
       {
             "id": 3,
-            "name": "Kang Ho Dong Baekjeong",
+            "name": "Chocolate Donuts",
             "neighborhood": "Manhattan",
             "photograph": "https://i.ibb.co/9Vf0jYV/fresh-tasty-donuts-with-chocolate-glaze.png",
-            "price": "200",
-            "address": "MEH. I've tried their Jersey location as well but Kang Ho Dong meat quality is severely decreasing. A Korean bbq place with whatever meat? I think NOT!",
+            "price": "300",
+            "address": "Most dictionaries enter donut as a variant of doughnut. The spelling of donut without the -ough has appeared in enough written sources (and been made popular by brands such as Dunkin' Donuts) that it has become an accepted spelling.!",
             "reviews": [
                   {
                         "name": "Emily",
@@ -52,8 +52,8 @@
             "name": "Katz's Delicatessen",
             "neighborhood": "Manhattan",
             "photograph": "https://i.ibb.co/8cFwvSX/close-dinner-fresh-closeup-lunch.png",
-            "price": "200",
-            "address": "Ok so four of us came. One more later who didn't order becauase it's so expensive and simple. Seriously, a bunch of meat albeit you can sample beforehand on rye/white/wheat bread. Cheese extra. ",
+            "price": "400",
+            "address": "Katz's legendary pastrami, corned beef and Jewish deli classics are available for sale online, shipped nationwide. ",
             "reviews": [
                   {
                         "name": "David",
@@ -65,11 +65,11 @@
       },
       {
             "id": 5,
-            "name": "Roberta's Pizza",
+            "name": "Shahi Kabab",
             "neighborhood": "Brooklyn",
-            "photograph": "5.jpg",
-            "price": "200",
-            "address": "he pizza is fantastic, not THE best I've ever had, but would definitely go back since it has great food and great ambiance. Definitely worth going to. !!",
+            "photograph": "https://i.ibb.co/tHrG9rV/barbecue-beef-kebabs-with-green-pepper.png",
+            "price": "500",
+            "address": " In a large saucepan, add water, red meat, split chickpeas, chopped onions, garlic paste, ginger paste, cumin seeds, coriander seeds, dry red chilli !!",
             "reviews": [
                   {
                         "name": "Laurel",
@@ -83,9 +83,9 @@
             "id": 6,
             "name": "Hometown BBQ",
             "neighborhood": "Brooklyn",
-            "photograph": "6.jpg",
-            "price": "200",
-            "address": "mmmmmm, what a gem this is in bklyn! I loveeee how soft their brisket is here. Their pork tacos are to die for, their different variety of ribs and lastly, their lamb is not gamey at all.",
+            "photograph": "https://i.ibb.co/L139ksQ/fried-appetizing-tasty-chicken-breast-served-skillet-with-asparagus-dark-background.png",
+            "price": "100",
+            "address": "To roast or broil (food, such as meat) on a rack or revolving spit over or before a source of heat (such as hot coals or a gas flame) barbecuing chicken for dinner.",
             "reviews": [
                   {
                         "name": "Ai-Mei",
@@ -97,11 +97,11 @@
       },
       {
             "id": 7,
-            "name": "Superiority Burger",
+            "name": "Chocolate milkShake",
             "neighborhood": "Manhattan",
-            "photograph": "7.jpg",
-            "price": "200",
-            "address": "Great flavors and very satisfying. Craving a sandwich, I stopped by on a Friday night with a vegetarian friend. Super small location with just a few seats inside. ",
+            "photograph": "https://i.ibb.co/tB2p7jn/Chocolate-Milkshake-Recipe2.jpg",
+            "price": "220",
+            "address": "In just five minutes and with three simple ingredients — cold milk, HERSHEY'S syrup and vanilla or chocolate ice cream. ",
             "reviews": [
                   {
                         "name": "Shivi",
@@ -113,11 +113,11 @@
       },
       {
             "id": 8,
-            "name": "The Dutch",
+            "name": "Roshogolla",
             "neighborhood": "Manhattan",
-            "photograph": "8.jpg",
-            "price": "200",
-            "address": "Aside from the slightly claustrophobic dining area and the fact that you may have difficulty hearing your dining companion, I'd return to The Dutch without hesitation. The food is surprisingly well-executed and conceived.",
+            "photograph": "https://i.ibb.co/FHrNVPf/photo-1.png",
+            "price": "140",
+            "address": "Along with chhena gaja and chhena poda, Rasgulla is one of three traditional Odia chhena desserts. Due to rasgulla becoming associated with the Bengali cuisine, the Odisha Milk Federation has tried to popularize chhena poda as the signature Odia dessert.",
             "reviews": [
                   {
                         "name": "Lori",
@@ -129,11 +129,11 @@
       },
       {
             "id": 9,
-            "name": "Casa Enrique",
+            "name": "Somucha",
             "neighborhood": "Queens",
-            "photograph": "10.jpg",
-            "price": "200",
-            "address": "or a Michelin star restaurant, it's fairly priced and the food is fairly good. Started with a strawberry margarita which was good in flavor but not much alcohol. Had the chicken enchiladas with salsa verde and it was really good.",
+            "photograph": "https://i.ibb.co/tDy4TSZ/1601772990-bg.png",
+            "price": "730",
+            "address": "made with boiled rice flour dough , a very crispy version. This special type of Samosa is a savory version of pithas , made with .",
             "reviews": [
                   {
                         "name": "Jason",

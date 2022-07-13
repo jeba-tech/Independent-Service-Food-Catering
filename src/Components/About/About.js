@@ -5,14 +5,15 @@ import './About.css';
 const About = () => {
       return (
             <div id='about'>
-                  <h1 className='title'>About Us</h1>
+                  <h1 className='title'>About Me</h1>
                   <div className='about'>
                         <h4>
-                              Catering is the business of providing food service at a remote site or a site such as a hotel, hospital, pub, aircraft, cruise ship, park, filming site or studio, entertainment site, or event venue.Our service is a Home Cooked Food network of 8k+ homes, well-documented kitchens, and a community of talented chefs & bingers.
 
-                              Oota Box has partnered with home-makers in 70+ locations who love to cook & serve. The food is prepared in their very own houses, they put in all the effort to make the food fresh, hot, healthy & hygienic, in a neatly packed meal box.
 
-                              Customers can use the platform to find a chef around them, connect with them to place an order, and have the food either picked up or opt-in for the delivery service if the chef provides one.</h4>
+
+
+
+                              Wish to become an expert in a domain, technology or language. work on a system that has X scale or complexity. Want to get to a specific job title.I will make higher customer satisfaction. Supporting the existing and potential customers is an obvious goal for my website. Better user experience and service can go a long way to establish and maintain the customer relationship which I will be focused.Wish to become an expert in programming languages JavaScript and Python. Strengthen data management skills by working with DBMS systems.</h4>
                   </div>
             </div>
       );
