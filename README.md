@@ -1,19 +1,19 @@
 # Home Cooking
 
-# Live Site Link: https://independent-service-prov-6e8eb.web.app/
+## Live Site Link: https://independent-service-prov-6e8eb.web.app/
 
--This website is all about home food catering.
--Customers can order food after successful registration and login.
--Two authentication has been used :email-password based and google sign in.
+* This website is all about home food catering.
+* Customers can order food after successful registration and login.
+* Two authentication has been used :email-password based and google sign in.
 
 ## list of technologies:
--react
--react-firebase-hook
--react-router
--rect-bootstrap
--bootstrap-5 
--vanilla-css
--react-router-dom
+* react
+* react-firebase-hook
+* react-router
+* rect-bootstrap
+* bootstrap-5 
+* vanilla-css
+* react-router-dom
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
