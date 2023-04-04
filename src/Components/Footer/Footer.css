@@ -1,7 +1,11 @@
 .footer-style {
-      margin-top: 40px;
+      margin-top: 50px;
       text-align: center;
       background-color: black;
       color: aliceblue;
-      padding: 20px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
 }

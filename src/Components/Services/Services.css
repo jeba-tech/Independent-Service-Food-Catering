@@ -1,14 +1,16 @@
 .services-container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-gap: 20px;
+      grid-gap: 10px;
+      margin-left: 80px;
 
-      height: 10px;
+      height: 150px;
 }
 
 .service-title {
       text-align: center;
       color: brown;
+      margin: 30px;
 }
 
 /*responsive*/

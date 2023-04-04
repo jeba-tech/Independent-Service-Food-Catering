@@ -62,7 +62,7 @@ const Login = () => {
                               <input className='form-submit' type="submit" value="Login" />
                         </form>
                         <p>
-                              New to Ema-John? <Link className='form-link' to="/register">Create an account</Link>
+                              New to Home Cooking? <Link className='form-link' to="/register">Create an account</Link>
                         </p>
 
                         <SocialLogin></SocialLogin>

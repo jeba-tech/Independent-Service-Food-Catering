@@ -9,11 +9,12 @@ const Service = ({ service }) => {
             navigate(`/service/${id}`)
       }
       return (
-            <div className='service'>
+            <div className='service rounded-3'>
                   <img className='service-img' src={photograph} />
-                  <h1 className='dish-name'>{name}</h1>
-                  <h2>${price}</h2>
-                  <h4 className='description'>{address}</h4>
+                  <h2 className='dish-name'>{name}</h2>
+                  <h4>${price}</h4>
+                  <h4 className='description' style={{ textAlign: "justify" }}>{address.length <= 115 ? address : address.substring(0, 115) + "..."}</h4>
+                  {/* <h4 className='description'>{address.substring(0, 300) + "..."}</h4> */}
                   <button onClick={() => navigateToServiceDetail(id)} className='btn btn-outline-dark mt-2'>Order Now</button>
 
             </div>

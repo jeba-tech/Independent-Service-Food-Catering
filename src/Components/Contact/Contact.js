@@ -11,20 +11,26 @@ const Contact = () => {
 
             <div className='contactUs' id='contact'>
                   <div>
-                        <h2 className='contact-title'>Contact Me</h2>
+                        <h2 className='contact-title'>Contact Us</h2>
                         <form onSubmit={handleCreateUser} >
-                              <div className="input-group">
-                                    <label htmlFor="text">Your Name</label>
-                                    <input type="text" name="text" id="" required />
+                              <div >
+                                    {/* <label htmlFor="text">Your Name</label> */}
+                                    <p>Your Name</p>
+                                    <p className='input-group'><input type="text" name="text" id="" required /></p>
+
                               </div>
-                              <div className="input-group">
-                                    <label htmlFor="email">Email</label>
-                                    <input type="email" name="email" id="" required />
+                              <div >
+                                    <p>Email</p>
+                                    <p className='input-group'> <input type="email" name="email" id="" required /></p>
+                                    {/* <label htmlFor="email">Email</label> */}
+
                               </div>
 
-                              <div className="input-group">
-                                    <label htmlFor="text">Write Massage</label>
-                                    <input type="text" name="text" id="" required />
+                              <div >
+                                    <p>Write Massage</p>
+                                    <p className='input-group'><textarea type="text" name="text" id="" required /></p>
+                                    {/* <label htmlFor="text">Write Massage</label> */}
+
                               </div>
                               <input className='form-submit' type="submit" value="Send" />
                         </form>
