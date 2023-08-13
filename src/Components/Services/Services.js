@@ -3,6 +3,7 @@ import Service from '../Service/Service';
 import './Services.css';
 const Services = () => {
       const [services, setServices] = useState([]);
+      console.log("hfksjdh", services)
       useEffect(() => {
             fetch('services.json')
                   .then(res => res.json())
