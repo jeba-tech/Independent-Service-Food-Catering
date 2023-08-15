@@ -41,7 +41,7 @@ const ServiceDetail = () => {
                         <h4 className='description' style={{ textAlign: "justify" }}>{singleData.address}</h4>
                         <div className='text-center'>
                               <Link to="/order">
-                                    <button className='btn btn-success mt-5'>Order Now</button>
+                                    <button className='btn btn-success mt-5'>Place Order</button>
 
                               </Link>
                         </div>
