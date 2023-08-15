@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import Loading from '../Loading/Loading';
 // import services from '../../../public/services.json';
 const ServiceDetail = () => {
 
@@ -24,14 +25,11 @@ const ServiceDetail = () => {
       }, [serviceId]);
 
       if (!singleData) {
-            return <p>Loading...</p>;
+            return <Loading></Loading>
       }
 
 
 
-      if (!singleData) {
-            return <p>Loading...</p>;
-      }
       return (
             <div style={{ alignItems: 'center' }}>
                   <div className='service rounded-3' style={{ width: '50%', padding: '74px', marginTop: '100px', marginLeft: '400px' }} >
