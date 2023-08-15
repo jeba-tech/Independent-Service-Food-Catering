@@ -47,7 +47,7 @@ const Register = () => {
             <div className='form-container'>
                   <div>
                         <h2 className='form-title'>Registration</h2>
-                        <form onSubmit={handleCreateUser} >
+                        <form onSubmit={handleCreateUser} autocomplete="off">
                               <div className="input-group">
                                     <label htmlFor="email">Email</label>
                                     <input onBlur={handleEmailBlur} type="email" name="email" id="" required />

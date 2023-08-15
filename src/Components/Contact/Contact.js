@@ -12,7 +12,7 @@ const Contact = () => {
             <div className='contactUs' id='contact'>
                   <div>
                         <h2 className='contact-title'>Contact Us</h2>
-                        <form onSubmit={handleCreateUser} >
+                        <form onSubmit={handleCreateUser} autocomplete="off" >
                               <div >
                                     {/* <label htmlFor="text">Your Name</label> */}
                                     <p>Your Name</p>

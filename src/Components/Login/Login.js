@@ -46,7 +46,7 @@ const Login = () => {
             <div className='form-container'>
                   <div>
                         <h2 className='form-title'>Login</h2>
-                        <form onSubmit={handleUserSignIn}>
+                        <form onSubmit={handleUserSignIn} autocomplete="off">
                               <div className="input-group">
                                     <label htmlFor="email">Email</label>
                                     <input onBlur={handleEmailBlur} type="email" name="email" id="" required />
