@@ -5,6 +5,8 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import './Login.css';
 import SocialLogin from './SocialLogin';
+import Loading from '../Loading/Loading';
+import Swal from 'sweetalert2';
 
 
 const Login = () => {
@@ -35,10 +37,21 @@ const Login = () => {
       if (user) {
             navigate(from, { replace: true });
       }
+      if (user) {
+            Swal.fire({
+                  position: 'top-end',
+                  icon: 'success',
+                  title: 'Login Successful',
+                  showConfirmButton: false,
+                  timer: 1500
+            })
+      }
 
       const handleUserSignIn = event => {
             event.preventDefault();
             signInWithEmailAndPassword(email, password);
+
+
       }
 
 

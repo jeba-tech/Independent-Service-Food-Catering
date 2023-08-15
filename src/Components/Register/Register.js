@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import SocialLogin from '../Login/SocialLogin';
+import Swal from 'sweetalert2';
 
 const Register = () => {
 
@@ -11,6 +12,7 @@ const Register = () => {
       const [password, setPassword] = useState('');
       const [confirmPassword, setConfirmPassword] = useState('');
       const [error, setError] = useState('');
+      const [agree, setAgree] = useState(false);
       const navigate = useNavigate();
 
       const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
@@ -29,7 +31,15 @@ const Register = () => {
       if (user) {
             navigate('/login');
       }
-
+      if (user) {
+            Swal.fire({
+                  position: 'top-end',
+                  icon: 'success',
+                  title: 'Registration Successful',
+                  showConfirmButton: false,
+                  timer: 1500
+            })
+      }
       const handleCreateUser = event => {
             event.preventDefault();
             if (password !== confirmPassword) {
@@ -40,8 +50,9 @@ const Register = () => {
                   setError('Password must be 6 characters or longer');
                   return;
             }
-
-            createUserWithEmailAndPassword(email, password);
+            if (agree) {
+                  createUserWithEmailAndPassword(email, password);
+            }
       }
       return (
             <div className='form-container'>
@@ -62,7 +73,10 @@ const Register = () => {
                               </div>
                               <p style={{ color: 'red' }}>{error}</p>
 
-                              <input className='form-submit' type="submit" value="Register" />
+                              <p className={agree ? 'text-black' : 'text-danger'}>
+                                    <input onClick={() => setAgree(!agree)} className='mx-auto' type="checkbox" name="terms" id="terms" />  Accept Home Cooking terms and conditions
+                              </p>
+                              <input disabled={!agree} className='form-submit' type="submit" value="Register" />
                         </form>
                         <p>
                               Already have an account? <Link className='form-link' to="/login">Login</Link>
