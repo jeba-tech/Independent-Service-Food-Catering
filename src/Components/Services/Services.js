@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Service from '../Service/Service';
 import './Services.css';
+import PageTitle from '../PageTitle/PageTitle';
 const Services = () => {
       const [services, setServices] = useState([]);
       console.log("hfksjdh", services)
@@ -11,6 +12,7 @@ const Services = () => {
       }, [])
       return (
             <div id='services'>
+                  {/* <PageTitle title="Service"></PageTitle> */}
                   <h1 className='service-title'>Services</h1>
 
                   <div className='services-container'>

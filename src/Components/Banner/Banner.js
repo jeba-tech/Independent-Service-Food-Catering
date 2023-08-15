@@ -5,12 +5,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Banner1 from '../../images/banner/Banner1.jpg'
 import Banner2 from '../../images/banner/Banner2.jpg'
 import Banner3 from '../../images/banner/Banner3.jpg'
+// import PageTitle from '../PageTitle/PageTitle';
 
 const Banner = () => {
 
 
       return (
             <Carousel>
+                  {/* <PageTitle title="Home"></PageTitle> */}
                   <Carousel.Item interval={1000}>
                         <img
                               className="d-block w-100"

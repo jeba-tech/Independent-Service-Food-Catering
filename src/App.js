@@ -14,6 +14,7 @@ import NotFound from './Components/NotFound/NotFound';
 import Order from './Components/Order/Order';
 import Blog from './Components/Blogs/Blog';
 import Contact from './Components/Contact/Contact';
+import Services from './Components/Services/Services';
 
 //const auth = getAuth(app);
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
 
         {/* <Route path="/about" element={<About></About>}></Route> */}
+        <Route path="/services" element={<Services></Services>}></Route>
         <Route path="/service/:serviceId" element={<ServiceDetail></ServiceDetail>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>

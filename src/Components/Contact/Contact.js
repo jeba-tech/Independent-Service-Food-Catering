@@ -1,5 +1,7 @@
 import React from 'react';
 import './Contact.css';
+import PageTitle from '../PageTitle/PageTitle';
+// import { Helmet } from 'react-helmet-async';
 
 const Contact = () => {
       const handleCreateUser = event => {
@@ -10,6 +12,10 @@ const Contact = () => {
 
 
             <div className='contactUs' id='contact'>
+                  {/* <Helmet>
+                        <title>Contact -Home Cooking</title>
+                  </Helmet> */}
+                  {/* <PageTitle title="Contact"></PageTitle> */}
                   <div>
                         <h2 className='contact-title'>Contact Us</h2>
                         <form onSubmit={handleCreateUser} autocomplete="off" >
